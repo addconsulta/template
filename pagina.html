@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>CENTRUM Católica</title>
+	<meta name="description" content="">
+	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+	<aside class="Banner u-backgroundCover">
+		<div class="Wrapper u-textRight">
+			<div class="FormularioContenedor u-displayInlineblock u-textCenter">
+				<div class="Formulario">
+					<form action="gracias.php" id="form" method="POST" class="Formulario-registro u-formularios">
+						<div class="Formulario-two u-displayInlineblock">
+							<label for="nombres">Nombres</label>
+							<input type="text" id="nombres" name="nombres" class="input">
+						</div>
+						<div class="Formulario-two u-displayInlineblock">
+							<label for="apellidopaterno">Apellido Paterno</label>
+							<input type="text" id="apellidopaterno" name="apellidopaterno" class="input">
+						</div>
+						<div class="Formulario-two u-displayInlineblock">
+							<label for="apellidomaterno">Apellido Materno</label>
+							<input type="text" id="apellidomaterno" name="apellidomaterno" class="input">
+						</div>
+						<div class="Formulario-two u-displayInlineblock">
+							<label for="dni">DNI</label>
+							<input type="tel" id="dni" name="dni" class="input">
+						</div>
+						<div class="Formulario-two u-displayInlineblock">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" class="input">
+						</div>
+						<div class="Formulario-two u-displayInlineblock">
+							<label for="telefono">Teléfono</label>
+							<input type="tel" id="telefono" name="telefono" class="input">
+						</div>
+						<div class="Formulario-two u-displayInlineblock">
+							<select name="grado" id="grado">
+								<option value="" selected="">Grado</option>
+								<option value="Estudiante">Estudiante</option>
+								<option value="Técnico">Técnico</option>
+								<option value="Bachiller">Bachiller</option>
+								<option value="Titulado">Titulado</option>
+								<option value="Magister">Magister</option>
+								<option value="Doctor">Doctor</option>
+							</select>
+						</div>
+						<div class="Formulario-two u-displayInlineblock">
+							<label for="fechadenacimiento">Fecha de Nacimiento</label>
+							<input type="text" id="fechadenacimiento" name="fechadenacimiento" class="input">
+						</div>
+						<div class="Formulario-two u-displayInlineblock">
+							<select name="pais" id="pais">
+								<option value="0">País</option>
+								<option value="AFG" >Afghanistan</option>
+								<option value="ALB" >Albania</option>
+								<option value="DZA" >Algeria</option>
+								<option value="ASM" >American Samoa</option>
+								<option value="AND" >Andorra</option>
+								<option value="AGO" >Angola</option>
+								<option value="AIA" >Anguilla</option>
+								<option value="ATA" >Antarctica</option>
+								<option value="ATG" >Antigua and Barbuda</option>
+								<option value="ARG" >Argentina</option>
+								<option value="ARM" >Armenia</option>
+								<option value="ABW" >Aruba</option>
+								<option value="AUS" >Australia</option>
+								<option value="AUT" >Austria</option>
+								<option value="AZE" >Azerbaijan</option>
+								<option value="BHS" >Bahamas</option>
+								<option value="BHR" >Bahrain</option>
+								<option value="BGD" >Bangladesh</option>
+								<option value="BRB" >Barbados</option>
+								<option value="BLR" >Belarus</option>
+								<option value="BEL" >Belgium</option>
+								<option value="BLZ" >Belize</option>
+								<option value="BEN" >Benin</option>
+								<option value="BMU" >Bermuda</option>
+								<option value="BTN" >Bhutan</option>
+								<option value="BOL" >Bolivia</option>
+								<option value="BIH" >Bosnia and Herzegovina</option>
+								<option value="BWA" >Botswana</option>
+								<option value="BVT" >Bouvet Island</option>
+								<option value="BRA" >Brazil</option>
+								<option value="IOT" >British Indian Ocean Territory</option>
+								<option value="BRN" >Brunei</option>
+								<option value="BGR" >Bulgaria</option>
+								<option value="BFA" >Burkina Faso</option>
+								<option value="BDI" >Burundi</option>
+								<option value="KHM" >Cambodia</option>
+								<option value="CMR" >Cameroon</option>
+								<option value="CAN" >Canada</option>
+								<option value="CPV" >Cape Verde</option>
+								<option value="CYM" >Cayman Islands</option>
+								<option value="CIV" >CÃ´te dÂ’Ivoire</option>
+								<option value="CAF" >Central African Republic</option>
+								<option value="TCD" >Chad</option>
+								<option value="CHL" >Chile</option>
+								<option value="CHN" >China</option>
+								<option value="CXR" >Christmas Island</option>
+								<option value="CCK" >Cocos (Keeling) Islands</option>
+								<option value="COL" >Colombia</option>
+								<option value="COM" >Comoros</option>
+								<option value="COG" >Congo</option>
+								<option value="COD" >Congo, The Democratic Republic of the</option>
+								<option value="COK" >Cook Islands</option>
+								<option value="CRI" >Costa Rica</option>
+								<option value="HRV" >Croatia</option>
+								<option value="CUB" >Cuba</option>
+								<option value="CYP" >Cyprus</option>
+								<option value="CZE" >Czech Republic</option>
+								<option value="DNK" >Denmark</option>
+								<option value="DJI" >Djibouti</option>
+								<option value="DMA" >Dominica</option>
+								<option value="DOM" >Dominican Republic</option>
+								<option value="TMP" >East Timor</option>
+								<option value="ECU" >Ecuador</option>
+								<option value="EGY" >Egypt</option>
+								<option value="SLV" >El Salvador</option>
+								<option value="GNQ" >Equatorial Guinea</option>
+								<option value="ERI" >Eritrea</option>
+								<option value="EST" >Estonia</option>
+								<option value="ETH" >Ethiopia</option>
+								<option value="FLK" >Falkland Islands</option>
+								<option value="FRO" >Faroe Islands</option>
+								<option value="FJI" >Fiji Islands</option>
+								<option value="FIN" >Finland</option>
+								<option value="FRA" >France</option>
+								<option value="GUF" >French Guiana</option>
+								<option value="PYF" >French Polynesia</option>
+								<option value="ATF" >French Southern territories</option>
+								<option value="GAB" >Gabon</option>
+								<option value="GMB" >Gambia</option>
+								<option value="GEO" >Georgia</option>
+								<option value="DEU" >Germany</option>
+								<option value="GHA" >Ghana</option>
+								<option value="GIB" >Gibraltar</option>
+								<option value="GRC" >Greece</option>
+								<option value="GRL" >Greenland</option>
+								<option value="GRD" >Grenada</option>
+								<option value="GLP" >Guadeloupe</option>
+								<option value="GUM" >Guam</option>
+								<option value="GTM" >Guatemala</option>
+								<option value="GIN" >Guinea</option>
+								<option value="GNB" >Guinea-Bissau</option>
+								<option value="GUY" >Guyana</option>
+								<option value="HTI" >Haiti</option>
+								<option value="HMD" >Heard Island and McDonald Islands</option>
+								<option value="VAT" >Holy See (Vatican City State)</option>
+								<option value="HND" >Honduras</option>
+								<option value="HKG" >Hong Kong</option>
+								<option value="HUN" >Hungary</option>
+								<option value="ISL" >Iceland</option>
+								<option value="IND" >India</option>
+								<option value="IDN" >Indonesia</option>
+								<option value="IRN" >Iran</option>
+								<option value="IRQ" >Iraq</option>
+								<option value="IRL" >Ireland</option>
+								<option value="ISR" >Israel</option>
+								<option value="ITA" >Italy</option>
+								<option value="JAM" >Jamaica</option>
+								<option value="JPN" >Japan</option>
+								<option value="JOR" >Jordan</option>
+								<option value="KAZ" >Kazakstan</option>
+								<option value="KEN" >Kenya</option>
+								<option value="KIR" >Kiribati</option>
+								<option value="KWT" >Kuwait</option>
+								<option value="KGZ" >Kyrgyzstan</option>
+								<option value="LAO" >Laos</option>
+								<option value="LVA" >Latvia</option>
+								<option value="LBN" >Lebanon</option>
+								<option value="LSO" >Lesotho</option>
+								<option value="LBR" >Liberia</option>
+								<option value="LBY" >Libyan Arab Jamahiriya</option>
+								<option value="LIE" >Liechtenstein</option>
+								<option value="LTU" >Lithuania</option>
+								<option value="LUX" >Luxembourg</option>
+								<option value="MAC" >Macao</option>
+								<option value="MKD" >Macedonia</option>
+								<option value="MDG" >Madagascar</option>
+								<option value="MWI" >Malawi</option>
+								<option value="MYS" >Malaysia</option>
+								<option value="MDV" >Maldives</option>
+								<option value="MLI" >Mali</option>
+								<option value="MLT" >Malta</option>
+								<option value="MHL" >Marshall Islands</option>
+								<option value="MTQ" >Martinique</option>
+								<option value="MRT" >Mauritania</option>
+								<option value="MUS" >Mauritius</option>
+								<option value="MYT" >Mayotte</option>
+								<option value="MEX" >Mexico</option>
+								<option value="FSM" >Micronesia, Federated States of</option>
+								<option value="MDA" >Moldova</option>
+								<option value="MCO" >Monaco</option>
+								<option value="MNG" >Mongolia</option>
+								<option value="MSR" >Montserrat</option>
+								<option value="MAR" >Morocco</option>
+								<option value="MOZ" >Mozambique</option>
+								<option value="MMR" >Myanmar</option>
+								<option value="NAM" >Namibia</option>
+								<option value="NRU" >Nauru</option>
+								<option value="NPL" >Nepal</option>
+								<option value="NLD" >Netherlands</option>
+								<option value="ANT" >Netherlands Antilles</option>
+								<option value="NCL" >New Caledonia</option>
+								<option value="NZL" >New Zealand</option>
+								<option value="NIC" >Nicaragua</option>
+								<option value="NER" >Niger</option>
+								<option value="NGA" >Nigeria</option>
+								<option value="NIU" >Niue</option>
+								<option value="NFK" >Norfolk Island</option>
+								<option value="PRK" >North Korea</option>
+								<option value="MNP" >Northern Mariana Islands</option>
+								<option value="NOR" >Norway</option>
+								<option value="OMN" >Oman</option>
+								<option value="PAK" >Pakistan</option>
+								<option value="PLW" >Palau</option>
+								<option value="PSE" >Palestine</option>
+								<option value="PAN" >Panama</option>
+								<option value="PNG" >Papua New Guinea</option>
+								<option value="PRY" >Paraguay</option>
+								<option value="PER" selected>Peru</option>
+								<option value="PHL" >Philippines</option>
+								<option value="PCN" >Pitcairn</option>
+								<option value="POL" >Poland</option>
+								<option value="PRT" >Portugal</option>
+								<option value="PRI" >Puerto Rico</option>
+								<option value="QAT" >Qatar</option>
+								<option value="REU" >RÃ©union</option>
+								<option value="ROM" >Romania</option>
+								<option value="RUS" >Russian Federation</option>
+								<option value="RWA" >Rwanda</option>
+								<option value="SHN" >Saint Helena</option>
+								<option value="KNA" >Saint Kitts and Nevis</option>
+								<option value="LCA" >Saint Lucia</option>
+								<option value="SPM" >Saint Pierre and Miquelon</option>
+								<option value="VCT" >Saint Vincent and the Grenadines</option>
+								<option value="WSM" >Samoa</option>
+								<option value="SMR" >San Marino</option>
+								<option value="STP" >Sao Tome and Principe</option>
+								<option value="SAU" >Saudi Arabia</option>
+								<option value="SEN" >Senegal</option>
+								<option value="SYC" >Seychelles</option>
+								<option value="SLE" >Sierra Leone</option>
+								<option value="SGP" >Singapore</option>
+								<option value="SVK" >Slovakia</option>
+								<option value="SVN" >Slovenia</option>
+								<option value="SLB" >Solomon Islands</option>
+								<option value="SOM" >Somalia</option>
+								<option value="ZAF" >South Africa</option>
+								<option value="SGS" >South Georgia and the South Sandwich Islands</option>
+								<option value="KOR" >South Korea</option>
+								<option value="ESP" >Spain</option>
+								<option value="LKA" >Sri Lanka</option>
+								<option value="SDN" >Sudan</option>
+								<option value="SUR" >Suriname</option>
+								<option value="SJM" >Svalbard and Jan Mayen</option>
+								<option value="SWZ" >Swaziland</option>
+								<option value="SWE" >Sweden</option>
+								<option value="CHE" >Switzerland</option>
+								<option value="SYR" >Syria</option>
+								<option value="TWN" >Taiwan</option>
+								<option value="TJK" >Tajikistan</option>
+								<option value="TZA" >Tanzania</option>
+								<option value="THA" >Thailand</option>
+								<option value="TGO" >Togo</option>
+								<option value="TKL" >Tokelau</option>
+								<option value="TON" >Tonga</option>
+								<option value="TTO" >Trinidad and Tobago</option>
+								<option value="TUN" >Tunisia</option>
+								<option value="TUR" >Turkey</option>
+								<option value="TKM" >Turkmenistan</option>
+								<option value="TCA" >Turks and Caicos Islands</option>
+								<option value="TUV" >Tuvalu</option>
+								<option value="UGA" >Uganda</option>
+								<option value="UKR" >Ukraine</option>
+								<option value="ARE" >United Arab Emirates</option>
+								<option value="GBR" >United Kingdom</option>
+								<option value="USA" >United States</option>
+								<option value="UMI" >United States Minor Outlying Islands</option>
+								<option value="URY" >Uruguay</option>
+								<option value="UZB" >Uzbekistan</option>
+								<option value="VUT" >Vanuatu</option>
+								<option value="VEN" >Venezuela</option>
+								<option value="VNM" >Vietnam</option>
+								<option value="VGB" >Virgin Islands, British</option>
+								<option value="VIR" >Virgin Islands, U.S.</option>
+								<option value="WLF" >Wallis and Futuna</option>
+								<option value="ESH" >Western Sahara</option>
+								<option value="YEM" >Yemen</option>
+								<option value="YUG" >Yugoslavia</option>
+								<option value="ZMB" >Zambia</option>
+								<option value="ZWE" >Zimbabwe</option>
+							</select>
+						</div>
+						<div class="Formulario-two u-displayInlineblock" id="loadciudad">
+							<select name="ciudad" id="ciudad">
+								<option value="">Ciudad</option>
+								<option value="Arequipa">Arequipa</option>
+								<option value="Ayacucho">Ayacucho</option>
+								<option value="Cajamarca">Cajamarca</option>
+								<option value="Callao">Callao</option>
+								<option value="Castilla">Castilla</option>
+								<option value="Chiclayo">Chiclayo</option>
+								<option value="Chimbote">Chimbote</option>
+								<option value="Chincha Alta">Chincha Alta</option>
+								<option value="Cusco">Cusco</option>
+								<option value="Huancayo">Huancayo</option>
+								<option value="Huánuco">Huánuco</option>
+								<option value="Ica">Ica</option>
+								<option value="Iquitos">Iquitos</option>
+								<option value="Juliaca">Juliaca</option>
+								<option value="Lima">Lima</option>
+								<option value="Piura">Piura</option>
+								<option value="Pucallpa">Pucallpa</option>
+								<option value="Puno">Puno</option>
+								<option value="Sullana">Sullana</option>
+								<option value="Tacna">Tacna</option>
+								<option value="Trujillo">Trujillo</option>
+								<option value="Ventanilla">Ventanilla</option>
+							</select>
+						</div>
+						<div class="Formulario-two u-displayInlineblock">
+							<label for="empresa">Empresa</label>
+							<input type="text" id="empresa" name="empresa" class="input">
+						</div>
+						<div class="Formulario-two u-displayInlineblock">
+							<label for="cargo">Cargo</label>
+							<input type="text" id="cargo" name="cargo" class="input">
+						</div>
+						<div class="Formulario-ley u-textJustify u-colorBlanco">De conformidad con la Ley N° 29733, Ley de Protección de Datos Personales, desde el momento de su ingreso y/o utilización al portal el usuario da expresamente su consentimiento para el tratamiento de los datos personales que por él sean facilitados o que se faciliten a través de su ingreso al portal o por cualquier medio.</div>
+						<input type="submit" id="enviar" class="Formulario-cta u-btn u-btnRojo" value="Solicite más información">
+					</form>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<section class="Informacion u-bgGris">
+		<div class="Wrapper">
+			<ul class="Informacion-lista u-list u-textCenter">
+				<li class="Informacion-item u-textLeft u-displayInlineblock">
+					<div class="Informacion-logos">
+						<figure class="Informacion-logo u-displayInlineblock">
+							<img src="/img/mba-gerencial-internacional-virtual.png" alt="MBA Gerencial Internacional Virtual">
+						</figure>
+						<figure class="Informacion-logo u-displayInlineblock">
+							<img src="/img/financial-times.png" alt="Financial Times">
+						</figure>
+					</div>
+				</li>
+				<li class="Informacion-item u-textLeft u-displayInlineblock">
+					<h3 class="Informacion-subtitulo u-subtitulo">Inicio de actividades de inducción en línea</h3>
+					<p>Del 1 de setiembre al 14 de setiembre</p>
+				</li>
+				<li class="Informacion-item u-textLeft u-displayInlineblock">
+					<h3 class="Informacion-subtitulo u-subtitulo">Semana presencial (Lima-Perú)</h3>
+					<p>Del lunes 15 de setiembre al sábado 20 de setiembre</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<header class="Header">
+		<div class="Wrapper">
+			<div class="Header-logo u-displayInlineblock">
+				<figure class="Header-logoImagen">
+					<img src="/img/centrum-catolica-logo.png" alt="CENTRUM Católica">
+				</figure>
+			</div>
+			<nav class="Menu u-displayInlineblock menu-top">
+				<div class="Menu-boton">
+					<figure>
+						<img src="/img/menu-icon.png" alt="">
+					</figure>
+				</div>
+				<ul class="Menu-lista u-list lnks-virtual">
+					<li class="u-displayInlineblock">
+						<a href="http://www.mbavirtual.pe/" class="Menu-link ranking u-btnRojo activeVirtual">MBA Virtual</a>
+					</li>
+					<li class="u-displayInlineblock">
+						<a href="http://maestriaoperacionesvirtual.com/" target="_blank" class="Menu-link ranking u-btnRojo">Maestría en Operaciones Virtual</a>
+					</li>
+					<li class="u-displayInlineblock">
+						<a href="http://mastersupplyvirtual.com/" target="_blank" class="Menu-link ranking u-btnRojo">Master en Supply Virtual</a>
+					</li>
+					<li class="u-displayInlineblock">
+						<a href="http://mbagerencial.com/" target="_blank" class="Menu-link ranking u-btnRojo">MBA Modalidad Presencial</a>
+					</li>
+				</ul>
+				<ul class="Menu-lista u-list">
+					<li class="Menu-item u-displayInlineblock">
+						<a href="/" class="Menu-link inicio">Inicio</a>
+					</li>
+					<li class="Menu-item u-displayInlineblock">
+						<a href="/beneficios.php" class="Menu-link beneficios">Beneficios</a>
+					</li>
+					<li class="Menu-item u-displayInlineblock">
+						<a href="/viaje-internacional-a-eada.php" class="Menu-link viaje-internacional-a-eada">Viaje Internacional</a>
+					</li>
+					<li class="Menu-item u-displayInlineblock">
+						<a href="/proceso-de-admision.php" class="Menu-link proceso-de-admision">Admisión</a>
+					</li>
+					<li class="Menu-item u-displayInlineblock">
+						<a href="/duracion.php" class="Menu-link duracion">Duración</a>
+					</li>
+					<li class="Menu-item u-displayInlineblock">
+						<a href="/ranking.php" class="Menu-link ranking">Ranking</a>
+					</li>
+					
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="Separador">
+		<figure>
+			<img src="/img/bg-estrellas.png" alt="">
+		</figure>
+	</div>
+
+	<section class="Main">
+		<div class="Wrapper u-textJustify">
+			<h1 class="Main-titulo u-titulo u-textCenter">Beneficios</h1>
+			<h2 class="Main-subtitulo u-bajada u-textCenter u-textUppercase">MBA Gerencial Internacional Virtual</h2>
+			<ul>
+				<li><strong>Plan de estudios con visión estratégica y global de los negocios.</strong></li>
+				<li><strong>Experiencia: </strong>CENTRUM Católica, es el Escuela de Negocios de la Pontificia Universidad Católica del Perú, universidad líder del país con 90 años de reconocida trayectoria, generando conocimiento y formando a los más prestigiosos profesionales.</li>
+				<li><strong>Acreditaciones: </strong>tres prestigiosas acreditaciones internacionales <b>(AACSB International, EQUIS, AMBA)</b> convierte CENTRUM Católica en la única escuela de negocios del Perú y la séptima en Latinoamérica en conseguir la <b>“TRIPLE CORONA”</b>.</li>
+				<li><strong>Internacionalización: </strong>viaje Internacional a la Escuela de Alta Dirección y Administración (EADA) (Barcelona-España)</li>
+				<li><strong>Flexibilidad al más alto nivel: </strong>Estudia desde cualquier lugar con horario flexible, metodología eLearning.</li>
+				<li><strong>Experiencia multicultural: </strong>nuestros alumnos acceden y residen en más de 20 países a nivel mundial.</li>
+				<li><strong>MBA con Master Internacional Simultáneo:</strong>
+					<ul>
+						<li>Magíster en Administración Estratégica de Empresas, otorgado por la Pontificia Universidad Católica del Perú.</li>
+						<li> Master Internacional en Liderazgo, otorgado por la Escuela de Alta Dirección y Administración (EADA).</li>
+					</ul>
+				</li>
+				<li><strong>Países con los cuales Perú mantiene Convenios de Reciprocidad:</strong> <a href="http://dngusisco.siu.edu.ar/aplicacion.php?ah=4f4efeab2fef9&amp;ai=convalidaciones%7C%7C14000331" target="_blank" follow="no follow">Argentina</a>, Bulgaria, Bolivia, <a href="http://www.mineducacion.gov.co/1621/articles-85871_archivo_pdf.pdf" target="_blank" follow="no follow">Colombia</a>, Costa Rica, Cuba, Chile, China, <a href="http://goo.gl/G5nGV" target="_blank" follow="no follow">Ecuador</a>, El Salvador, España, <a href="http://noticias.universia.edu.pe/vida-universitaria/noticia/2012/11/26/984284/peru-francia-pactan-validacion-mutua-titulos-grados-academicos.html" target="_blank" follow="no follow">Francia</a>, Guatemala, Honduras, Hungría, México, Nicaragua, Panamá, Paraguay, Rumania, Uruguay, Venezuela, Santa Sede y Ucrania. <a href="http://noticias.universia.edu.pe/en-portada/noticia/2010/09/16/689353/titulos-universitarios-unasur-acuerda-homologacion-region.html" target="_blank" follow="no follow">Acuerdo Unasur</a></li>
+				<li><strong>Mejora de la empleabilidad: </strong>Gestión de carrera con Lee Hecht Harrison-DBM.</li>
+				<li><strong>Networking: </strong>Ingreso a la red de la comunidad CENTRUM Católica y EADA.</li>
+				<li><strong>Excelencia: </strong>ingreso a la Sociedad de Honor Internacional Beta Gamma Sigma para alumnos de excelencia, y a la comunidad profesional de CENTRUM Católica, conformada por 35,000 profesionales en 35 países.</li>
+				<li><strong>Doble grado: </strong>opción de doble grado académico.</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="Testimonios  u-textCenter slider" fpos="1">
+		<div class="testimonio">
+			<div class="Wrapper">
+				<h2 class="Testimonios-titulo u-textUppercase">Testimonio </h2>
+				<h3 class="Testimonios-programa">MBA Gerencial Internacional Virtual XV</h3>
+				<blockquote>"Superarse es una decisión personal y para lograrlo hay que buscar las condiciones necesarias… así llegué a encontrar a CENTRUM Católica con un programa virtual para un MBA. Profundizando encontré la acreditación de la triple corona y me pareció interesante conocer más al respecto. Con esta información decidí solicitar más datos en un país cercano a Paraguay, con el mismo idioma y fácil de conocer el programa, sistema de enseñanza y demás reglas.<br><br>
+				Es importante mencionar que un MBA virtual conlleva mucha exigencia de responsabilidad personal, pero la posibilidad de estar realizándolo desde tu casa o desde cualquier parte del mundo, si se viaja mucho, realmente es una gran ventaja que ofrece hoy la tecnología. Muy importante mencionar el contacto internacional de compañeros de distintos países, además, el trabajo en grupo a distancia es un desafío que rompe fronteras"
+				</blockquote>
+				<h4 class="Testimonio-nombre textUppercase">Fabio Sitzmann  Hein</h4>
+				<p>Gerente Administrativo y Adjunto al COO</p>
+				<h5>Banco Regional S.A.E.C.A - Paraguay</h5>
+			</div>
+		</div>
+		<div class="testimonio hidden">
+			<div class="Wrapper">
+				<h2 class="Testimonios-titulo u-textUppercase">Testimonio </h2>
+				<h3 class="Testimonios-programa">MBA Gerencial Internacional Virtual XV</h3>
+				<blockquote>"Debido a mi trabajo y a no encontrar un programa de MBA que se adecúe a mis horarios, estuve aplazándolo por varios años. Busqué en la página de CENTRUM Católica y encontré el MBA Virtual, el cual tiene todo el prestigio, exigencia y las acreditaciones que espero para un programa de este tipo.<br><br>Ahora que estoy llevándolo, puedo decir que fue la mejor decisión que he podido tomar además de adecuarse a mis horarios ya que me da la flexibilidad para organizarme sin descuidar mi trabajo"</blockquote>
+				<h4 class="Testimonio-nombre textUppercase">Jorge Madalengoitia</h4>
+				<p>Gerente de Servicios Industriales</p>
+				<h5>MINSUR - Perú</h5>
+			</div>
+		</div>
+		<div class="testimonio hidden">
+			<div class="Wrapper">
+				<h2 class="Testimonios-titulo u-textUppercase">Testimonio </h2>
+				<h3 class="Testimonios-programa">MBA Gerencial Internacional Virtual XV</h3>
+				<blockquote>"Dentro de mi proyecto de vida estaba estudiar un MBA como aporte a mi crecimiento personal y laboral. Tomar la decisión no fue tarea fácil principalmente por el factor tiempo, soy mamá y mi trabajo demanda disponibilidad para viajar. Poca confianza tenía en los programas virtuales, pero luego de hacer una tarea muy juiciosa de averiguar, indagar, comparar, encontré que dentro de los mejores programas virtuales en el mundo está el de Centrum Católica.  Hoy hago parte de la promoción XV y es la mejor decisión que he podido tomar, manejo mi tiempo con disciplina y organización. La experiencia y calidad humana de los docentes, la oportunidad de compartir con personas de diferentes culturas, aprender de ellos, la opción de doble titulación, el acompañamiento constante, la comunicación directa, la confianza y el trabajo en equipo; son algunos de los factores que hacen que día a día me sienta más motivada en continuar estudiando y culminar este sueño que ya inicié"</blockquote>
+				<h4 class="Testimonio-nombre textUppercase">Catalina Jaramillo Martínez</h4>
+				<p>Gerente de Programas y Proyectos</p>
+				<h5>Compensation International Progress S.A - Colombia</h5>
+			</div>
+		</div>
+		<div class="navigation">
+			<ul class="bullets">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+
+	<div id="beneficios" class="Separador">
+		<figure>
+			<img src="/img/check.png" alt="">
+		</figure>
+	</div>
+
+	<section class="Beneficios u-backgroundCover u-textCenter">
+		<div class="Wrapper">
+			<h2 class="Beneficios-titulo u-titulo u-uppercase">Ventajas Diferenciales</h2>
+			<ul class="Beneficios-lista u-list">
+				<li class="Beneficios-item u-two">
+					<figure class="Beneficios-ico u-displayInlineblock">
+						<img src="/img/mundo.png" alt="Plan de estudios con visión estratégica y global de los negocios.">
+					</figure>
+					<h2>Visión Global y Estratégica</h2>
+					<p class="Beneficios-info u-displayInlineblock u-textJustify">Viaje Internacional de Estudios a EADA (Barcelona - España).<br>Nuestros alumnos realizan un <strong>viaje de dos semanas</strong> a la Escuela de Alta Dirección y Administración de España (EADA) en Barcelona, España.</p>
+				</li>
+				<li class="Beneficios-item u-two">
+					<figure class="Beneficios-ico u-displayInlineblock">
+						<img src="/img/universidad.png" alt="CENTRUM Católica, es el Escuela de Negocios de la Pontificia Universidad Católica del Perú.">
+					</figure>
+					<h2>Gestión de carrera con <br>Lee Hecht Harrison-DBM.</h2>
+					<p class="Beneficios-info u-displayInlineblock u-textJustify">Busca contribuir a la <strong>mejora de la empleabilidad de sus estudiantes</strong>, se les ofrece asesoría personalizada en el propio campus a través de consultores especializados.</p>
+				</li>
+				<li class="Beneficios-item u-two">
+					<figure class="Beneficios-ico u-displayInlineblock">
+						<img src="/img/acreditaciones.png" alt="Acreditaciones">
+					</figure>
+					<h2>MBA y Máster Internacional <br>Simultáneo</h2>
+					<ul >
+						<li>Magíster en Administración Estratégica de Empresas otorgado por la Pontificia Universidad Católica del Perú.</li>
+						<li>Máster Internacional en Liderazgo otorgado por EADA</li>
+					</ul>
+				</li>
+				<li class="Beneficios-item u-two">
+					<figure class="Beneficios-ico u-displayInlineblock">
+						<img src="/img/internacionalizacion.png" alt="Internacionalización">
+					</figure>
+					<h2>Opción de Doble Grado</h2>
+					<p class="Beneficios-info u-displayInlineblock u-textJustify">Los egresados podrán <strong>optar por un segundo grado de MBA</strong> en alguna de las escuelas de negocios, socios estratégicos de CENTRUM Católica:</p>
+					<ul class="padding5em">
+						<li>Tulane Universtiy (New Orleans, Estados Unidos)</li>
+						<li>Maastricht School of Management (Holanda)</li>
+						<li>Université Laval (Québec, Canadá)</li>
+					</ul>
+				</li>
+				<li class="Beneficios-item u-two">
+					<figure class="Beneficios-ico u-displayInlineblock">
+						<img src="/img/elearning.png" alt="Metodología eLearning.">
+					</figure>
+					<h2>Metodología E-Learning</h2>
+					<p class="Beneficios-info u-displayInlineblock u-textJustify">Nuestra metodología consta de <strong>actividades síncronas</strong> (sesiones online con el docente) y <strong>actividades asíncronas</strong> (casos de estudio, foros de discusión, etc.), permitiendo a los alumnos trabajar con flexibilidad de horario y de lugar con el mismo nivel y calidad de los programas presenciales de CENTRUM Católica.</p>
+				</li>
+				<li class="Beneficios-item u-two">
+					<figure class="Beneficios-ico u-displayInlineblock">
+						<img src="/img/multicultural.png" alt="Experiencia multicultural">
+					</figure>
+					<h2>Entorno Multicultural</h2>
+					<ul >
+						<li>Experiencia y diversidad internacional de nuestros alumnos.</li>
+						<li>Nuestros alumnos acceden y residen en más de <strong>20 países a nivel mundial</strong></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="viaje" class="Viaje u-textCenter">
+		<div class="Wrapper">
+			<h2 class="Viaje-titulo u-textUppercase">Viaje de estudios a eada: Barcelona - España</h2>
+			<h3 class="Viaje-subtitulo">Nuestros alumnos realizan un viaje de dos semanas a la Escuela de Alta Dirección y Administración de España (EADA) en Barcelona, España</h3>
+			<div class="u-box u-textJustify">
+				<div class="u-two">
+					<h4 class="Viaje-titulito">Viaje de estudio</h4>
+					<p>Las clases se realizan durante ocho días (04 días por semana) en el Centro Residencial de Formación ubicado en Collbató, Barcelona, para garantizar la dedicación exclusiva y la naturaleza intensiva del programa; su rigor académico se complementa con dos visitas empresariales y una sesión conjunta entre participantes de EADA y CENTRUM Católica.</p>
+					<p>El costo del programa incluye las clases lectivas, visitas empresariales, alojamiento y traslados durante las 08 noches de estadía en dos bloques de lunes a jueves. No incluye el pasaje aéreo, ni seguro médico, trámite de visado ni el alojamiento durante fines de semana en Barcelona.</p>
+				</div>
+				<div class="Viaje-video u-two">
+					<div class="u-video">
+						<iframe width="420" height="315" src="//www.youtube.com/embed/BycHBSyoj_Y?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="informacion">
+		<div class="Wrapper">
+			<div class="two">
+				<div class="box-right">
+					<figure>
+						<img src="http://static.mbagerencial.com/img/inversion.png" alt="Inversión" width="50" height="50">
+					</figure>
+					<div class="price-detail">
+						<h4>Inversión</h4>
+						<p>S/. 64,500</p>
+					</div>
+						<p> (precio referencial en dólares US$ 23,460 usando TC 2.75)</p>
+					</div>
+						
+				</div>
+			</div>
+		</div>
+		<div class="suscribete">
+			<div class="mid Wrapper">
+				<div class="two">
+					<p>Suscríbete al boletín de CENTRUM Católica.</p>
+				</div>
+				<div class="two" id="loadsuscripcion">
+					<form id="formsuscripcion" name="formsuscripcion" method="post" action="suscripcion.php">
+						<div class="box">
+							<input type="hidden" id="vmedio" name="vmedio" value="/">
+							<input type="hidden" id="vcampana" name="vcampana" value="7a0fff"> 
+							<input type="email" id="correo" name="correo" placeholder="Email">
+						</div>
+						<input type="submit" id="suscrito" class="btn amarillo upper" value="SUSCRÍBETE">
+					</form>
+				</div>
+			</div>
+		</div>
+<footer class="Footer">
+		<div class="Wrapper">
+		<p>&nbsp;</p>
+		<div class="Footer-logos u-displayInlineblock" >
+			<figure class="Footer-logo u-displayInlineblock" style="width:130px;">
+				<a href="http://www.centrum.pucp.edu.pe/es/index.php" target="_blank">
+					<img src="/img/centrum-catolica-logo.png" alt="CENTRUM Católica">
+				</a>
+			</figure>
+		</div>
+			<div class="">
+
+				<div class="FooterProgramas">
+
+					<ul class="FooterProgramas-lista u-list">
+						<li class="FooterProgramas-item" style="">
+							<a href="http://centrum.pucp.edu.pe/es/contenidoc.php?60/presenciales/doctorado.html" target="_blank">Doctorado</a>
+							<a href="http://centrum.pucp.edu.pe/es/contenidoc.php?152/presenciales/mba.html" target="_blank">MBA</a>  
+							<a href="http://centrum.pucp.edu.pe/es/contenidoc.php?6364/presenciales/maestrias.html" target="_blank">Maestrías</a> 
+							<a href="http://centrum.pucp.edu.pe/es/contenidoc.php?6108/presenciales/master_especializados_3.html" target="_blank">Master Especializados</a> 
+							<a href="http://centrum.pucp.edu.pe/es/contenidoc.php?8335/presenciales/diplomaturas.html" target="_blank">Diplomaturas</a>
+							<a href="http://centrum.pucp.edu.pe/es/contenido.php?479/presenciales/edex.html" target="_blank" style="    margin: 0;">Cursos Cortos</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://static.mbagerencial.com/js/datetimepicker/jquery.datetimepicker.css"/ >
+	<script src="http://static.mbagerencial.com/js/datetimepicker/jquery.datetimepicker.js"></script>
+	<script src="/js/main.js?v=34"></script>
+</body>
+</html>
