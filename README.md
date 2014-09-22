@@ -1,8 +1,11 @@
 # [CENTRUM Template](http://mbavirtual.pe)
 
 index.html => HOME
+
 pagina.html => PAGE
+
 gracias.html )=> THANK YOU PAGE
+
 
 css
 --main.css
