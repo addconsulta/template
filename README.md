@@ -8,12 +8,21 @@ gracias.html )=> THANK YOU PAGE
 
 
 css
+
 --main.css
+
 img
+
 --*.jpg
+
 --*.png
+
 js
+
 --main.js
+
 index.html
+
 pagina.html
+
 gracias.html
