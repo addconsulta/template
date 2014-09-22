@@ -1,7 +1,5 @@
 # [CENTRUM Template](http://mbavirtual.pe)
 
-[![Build Status](http://mbavirtual.pe)](http://mbavirtual.pe)
-
 index.html => HOME
 pagina.html => PAGE
 gracias.html )=> THANK YOU PAGE
